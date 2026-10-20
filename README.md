@@ -39,7 +39,8 @@ diferente, e isso é informação.
 
 | Post | Data | Pasta | O que mediu |
 |---|---|---|---|
-| Skill: o que é um SKILL.md e o que não é (a publicar) | medido em 20/10/2026; post previsto para 30/10/2026 | [`06-skill`](06-skill/) | o custo de uma Skill no contexto do Claude Code: a descrição contra o resto do SKILL.md e dos arquivos |
+| Skill: o que é um SKILL.md e o que não é (a publicar) | medido em 20/10/2026; post previsto para 27/10/2026 | [`06-skill`](06-skill/) | o custo de uma Skill no contexto do Claude Code: a descrição contra o resto do SKILL.md e dos arquivos |
+| "Publique seu agente em 5 minutos": no claude.ai, isso não existe (a publicar) | conferido em 20/10/2026; post previsto para 30/10/2026 | [`05-agente`](05-agente/) | se as frases citadas no post ainda estão nas páginas oficiais (Projetos, artefatos, Agent SDK, Managed Agents, preços da API) |
 
 ## Como contribuir
 

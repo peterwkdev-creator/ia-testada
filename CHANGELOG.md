@@ -3,6 +3,16 @@
 Cada versão tem uma tag `vX.Y.Z` no commit que a publicou. Medida nova ou
 refeita entra aqui com a data e a pasta.
 
+## 0.2.0 — 20/10/2026
+
+- Pasta nova `05-agente`: o `conferir_fontes.py` confere se as frases que o
+  post cita ainda estão nas páginas oficiais; `conferencia.tsv` de
+  20/10/2026 (15 de 15 frases, 6 páginas, com os preços da API como fonte
+  da "cobrança por uso") e testes em `tests/`, inclusive do `main()`.
+- Erro de leitura que não é `OSError` (`http.client.IncompleteRead`) passa
+  a sair no tsv como "erro:", em vez de traceback com o tsv antigo.
+- `06-skill`: data prevista do post corrigida de 30/10 para 27/10/2026.
+
 ## 0.1.0 — 20/10/2026
 
 - Primeira versão pública: a pasta `06-skill` (o que uma Skill custa no

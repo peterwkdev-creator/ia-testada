@@ -1,7 +1,7 @@
 # 06-skill: o que uma Skill custa no contexto
 
 Medida do post "Skill: o que é um SKILL.md e o que não é" da @peterwk.dev
-(a publicar; previsto para 30/10/2026).
+(a publicar; previsto para 27/10/2026).
 
 **Medido em 20/10/2026, no Claude Code v2.1.299**, no Windows.
 

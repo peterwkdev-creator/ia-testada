@@ -1,0 +1,17 @@
+# lido em 2026-10-20 23:14 (UTC)
+fonte	url	http	frase	presente
+projeto-compartilhar	https://support.claude.com/en/articles/9519189-manage-project-visibility-and-sharing	200	Project visibility and sharing features are available to users on Team or Enterprise plans	sim
+projeto-compartilhar	https://support.claude.com/en/articles/9519189-manage-project-visibility-and-sharing	200	Everyone in your organization can view and use the project	sim
+artefatos	https://support.claude.com/en/articles/17153992-what-are-artifacts-and-how-do-i-use-them	200	Artifacts start private to you	sim
+artefatos	https://support.claude.com/en/articles/17153992-what-are-artifacts-and-how-do-i-use-them	200	No API keys are required	sim
+artefatos	https://support.claude.com/en/articles/17153992-what-are-artifacts-and-how-do-i-use-them	200	usage counts against each person's own plan limits rather than yours	sim
+agent-sdk	https://code.claude.com/docs/en/agent-sdk/overview	200	Unless previously approved, Anthropic does not allow third party developers to offer claude.ai login or rate limits for their products	sim
+managed-agents	https://platform.claude.com/docs/en/managed-agents/overview	200	Claude Managed Agents is in beta	sim
+managed-agents	https://platform.claude.com/docs/en/managed-agents/overview	200	harness and infrastructure for running Claude as an autonomous agent	sim
+managed-agents	https://platform.claude.com/docs/en/managed-agents/overview	200	Recurring agent runs on a cron schedule through scheduled deployments	sim
+managed-agents	https://platform.claude.com/docs/en/managed-agents/overview	200	A Claude API key from the Claude Console	sim
+precos	https://platform.claude.com/docs/en/about-claude/pricing	200	Claude Managed Agents is billed on two dimensions: tokens and session runtime	sim
+precos	https://platform.claude.com/docs/en/about-claude/pricing	200	All tokens consumed by a Claude Managed Agents session are billed at the rates shown in Model pricing	sim
+projects-claude-code	https://code.claude.com/docs/en/claude-projects	200	You can't share a project or its threads with another user	sim
+projects-claude-code	https://code.claude.com/docs/en/claude-projects	200	public beta on Pro and Max plans	sim
+projects-claude-code	https://code.claude.com/docs/en/claude-projects	200	Projects in claude.ai chat and Cowork	sim
