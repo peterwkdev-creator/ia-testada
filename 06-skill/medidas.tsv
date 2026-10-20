@@ -1,0 +1,20 @@
+skill	descricao_chars	skill_md_chars	outros_bytes	na_listagem
+built-in-browser	819	6529	1467	sim
+chrome-browser	751	5881	1467	sim
+computer-use	936	9259	1467	sim
+conferir-post	218	893	0	sim
+deep-research	570	13101	10390	sim
+docs	1005	1243	0	sim
+docx	934	7596	1128575	sim
+fechar-tarefa	283	3600	0	não
+google-workspace	945	15356	205614	sim
+import-memory	139	10615	0	sim
+limpar-sessoes	141	1571	0	não
+morning	339	17948	22579	sim
+pdf	437	8035	50620	sim
+pptx	960	28424	1130504	sim
+setup-writing-style	454	42076	24491	sim
+skill-creator	319	33168	193885	sim
+xlsx	950	8542	1101782	sim
+
+# listagem inicial da sessão (2026-10-19T22:59:14.563Z): 36 skills, 18738 caracteres

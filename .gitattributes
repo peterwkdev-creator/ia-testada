@@ -1,0 +1,5 @@
+* text=auto eol=lf
+
+# Conteúdo conferido byte a byte: imagens, se alguma pasta trouxer prova na tela
+*.png binary
+*.jpg binary

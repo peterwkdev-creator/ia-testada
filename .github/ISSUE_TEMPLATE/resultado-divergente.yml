@@ -1,0 +1,44 @@
+name: Resultado diferente do medido
+description: Você refez uma medida e deu diferente. Medida que falta vai no outro modelo.
+title: "Medi e deu diferente: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado: medida refeita é o que mantém este repositório honesto.
+        Não cole transcrição de sessão, caminho com id da conta, e-mail ou token: a tabela que o script grava basta.
+  - type: input
+    id: pasta
+    attributes:
+      label: Pasta da medida
+      description: "Por exemplo, `06-skill`."
+    validations:
+      required: true
+  - type: input
+    id: versao
+    attributes:
+      label: Data e versões
+      description: "Quando você mediu, a versão do que foi medido (ex.: `claude --version`), o sistema (Windows, macOS, Linux) e o commit deste repositório."
+    validations:
+      required: true
+  - type: textarea
+    id: entrada
+    attributes:
+      label: O que você rodou
+      description: O comando, como no README da pasta.
+    validations:
+      required: true
+  - type: textarea
+    id: obtido
+    attributes:
+      label: O que deu
+      description: A saída do script (a tabela), sem dado privado.
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que o README diz, e por que você acha que difere
+      description: O número publicado e a sua hipótese (outra versão, outras skills instaladas, outro sistema, erro do medidor).
+    validations:
+      required: true

@@ -1,0 +1,15 @@
+# Segredo (bloco padrão: nunca entra)
+.env*
+!.env.example
+*backup_codes*
+*recovery*codes*
+*.pem
+*.key
+.claude/settings.local.json
+
+# Gerado
+__pycache__/
+*.pyc
+
+# Transcrição de sessão: é sua e tem dado da conta; nunca entra
+*.jsonl
