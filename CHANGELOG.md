@@ -3,6 +3,13 @@
 Cada versão tem uma tag `vX.Y.Z` no commit que a publicou. Medida nova ou
 refeita entra aqui com a data e a pasta.
 
+## 0.3.0 — a publicar
+
+- Pasta nova `07-subagente`: o `medir_subagentes.py` chama o
+  claude-context-cost (`--json`) e grava só as contagens; `medidas.tsv` de
+  21/10/2026 (passo do subagente 0,50 do da sessão: 48.272 contra 95.833
+  tokens na mediana) e testes em `tests/`, inclusive do `main()`.
+
 ## 0.2.0 — 20/10/2026
 
 - Pasta nova `05-agente`: o `conferir_fontes.py` confere se as frases que o

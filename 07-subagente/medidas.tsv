@@ -1,0 +1,25 @@
+medida	valor
+versao_claude_context_cost	1.6.3
+respostas_projeto	3034
+tokens_projeto	282197139
+sessoes	44
+respostas_sessoes	2728
+tokens_sessoes	264394222
+subagentes	34
+sessoes_com_subagente	17
+respostas_subagentes	306
+tokens_subagentes	17802917
+subagentes_pct_do_projeto	6.3
+sessoes_com_resposta	44
+subagentes_com_resposta	34
+sessoes_no_peso	17
+passo_sessao_mediana	95833
+passo_subagente_mediana	48272
+passo_subagente_min	40925
+passo_subagente_max	96285
+razao_passo_subagente_sessao	0.50
+peso_subagentes_na_sessao_pct_min	1.1
+peso_subagentes_na_sessao_pct_mediana	9.5
+peso_subagentes_na_sessao_pct_max	36.9
+
+# medido em 21/10/2026; passo = uma resposta; tokens = contexto relido
