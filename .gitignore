@@ -10,6 +10,10 @@
 # Gerado
 __pycache__/
 *.pyc
+.pytest_cache/
+
+# Capturas de tela do 05: o capturar.py as refaz; só o capturas.tsv entra
+05-agente/capturas/*.png
 
 # Transcrição de sessão: é sua e tem dado da conta; nunca entra
 *.jsonl

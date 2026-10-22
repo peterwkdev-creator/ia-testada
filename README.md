@@ -1,29 +1,47 @@
 # ia-testada
 
 As medidas por trás dos posts da [@peterwk.dev](https://www.instagram.com/peterwk.dev/)
-(IA testada de verdade, com prova na tela e data): uma pasta por post, com o
-script que mediu, a saída dele e um README com a data, a versão do que foi
-medido, as fontes, como refazer e os limites. O que se mede é Claude e
+(IA testada de verdade, com prova na tela e data). Cada post tem um número.
+Quando há o que refazer, há uma pasta numerada, com o script que mediu, a
+saída dele e um README com a data, a versão do que foi medido, as fontes,
+como refazer e os limites. O índice abaixo liga cada post à sua pasta. O que se mede é Claude e
 Claude Code na prática; este repositório é independente, sem ligação com a
 Anthropic.
 
+**Antes de começar:** nunca rodou um script em Python? Comece pelo
+[GUIA](GUIA.md): instalar o Python, baixar o repositório, rodar os testes,
+achar uma transcrição sua e rodar um medidor, passo a passo, no Windows, no
+macOS e no Linux.
+
 ## Instalar
 
-Python 3.11 ou mais novo, sem dependência fora da biblioteca padrão (nada de
-`pip install`):
+Python 3.11 ou mais novo. Tudo usa só a biblioteca padrão, menos o 07
+(`claude-context-cost`) e o `capturar.py` do 05 (`websockets` e o Google
+Chrome); essas dependências opcionais estão no
+[`requirements.txt`](requirements.txt). Os testes não precisam de nenhuma.
 
 ```bash
 git clone https://github.com/peterwkdev-creator/ia-testada.git
 cd ia-testada
 ```
 
+No Windows, onde estiver `python`, `py` também serve.
+
 ## Usar
 
-Cada pasta do índice abaixo tem o seu medidor e, no README dela, o comando
-para refazer a medida. A do post da Skill, por exemplo:
+Três pastas têm medidor: a 02, a 06 e a 07. A 05 tem um conferidor de
+fontes e o script das capturas de tela; a 04 aponta para o código no
+tts-ptbr. Cada README traz o passo a passo para refazer. O medidor do post
+da Skill, por exemplo:
 
 ```bash
 python -I 06-skill/medir_skills.py <transcrição .jsonl de uma sessão do Claude Code>
+```
+
+E a do post 2 (onde vão os tokens de uma sessão):
+
+```bash
+python -I 02-releitura/medir_sessao.py <transcrição .jsonl de uma sessão do Claude Code>
 ```
 
 Os testes dos medidores, com dados inventados:
@@ -37,11 +55,21 @@ diferente, e isso é informação.
 
 ## Índice
 
-| Post | Data | Pasta | O que mediu |
-|---|---|---|---|
-| Subagente: o passo custa metade (a publicar) | medido em 21/10/2026 | [`07-subagente`](07-subagente/) | o custo por passo de um subagente contra o da sessão principal, pelo claude-context-cost |
-| Skill: o que é um SKILL.md e o que não é (a publicar) | medido em 20/10/2026; post previsto para 27/10/2026 | [`06-skill`](06-skill/) | o custo de uma Skill no contexto do Claude Code: a descrição contra o resto do SKILL.md e dos arquivos |
-| "Publique seu agente em 5 minutos": no claude.ai, isso não existe (a publicar) | conferido em 20/10/2026; post previsto para 30/10/2026 | [`05-agente`](05-agente/) | se as frases citadas no post ainda estão nas páginas oficiais (Projetos, artefatos, Agent SDK, Managed Agents, preços da API) |
+"Post nº" é o número do post, na ordem de publicação. A pasta, quando
+existe, tem o mesmo número, com uma exceção: os posts 5 e 6 trocaram de
+data em 20/10/2026, e as pastas não mudaram de nome (os links das
+legendas apontam para elas). Por isso a pasta `05-agente` é o post 6, e a `06-skill`, o
+post 5. Os posts 1 e 3 não têm pasta.
+
+| Post nº | Post | Data | Onde está o código | O que mediu |
+|---|---|---|---|---|
+| 1 | Agente de IA com Claude: conferi no claude.ai e no Claude Code o que existe de verdade. | publicado em 18/10/2026 | sem pasta: leitura de páginas oficiais, sem script | o que existe para montar agente (Projetos, Skills e o resto), conferido peça por peça nas páginas oficiais e na conta |
+| 2 | Claude Code: 96% dos tokens de uma sessão são o Claude relendo a conversa | medido em 29/09 e 18/10/2026; publicado em 19/10/2026 | [`02-releitura`](02-releitura/) | releitura, gravação de cache e saída de uma sessão, pela transcrição |
+| 3 | Como fizemos a nossa voz (TTS v1) | publicado em 21/10/2026 | sem pasta: no [tts-ptbr](https://github.com/peterwkdev-creator/tts-ptbr) | a voz sintética dos Reels: modelo aberto, normalizador e dicionário nossos |
+| 4 | 6 vozes abertas leem a mesma frase | medido em 19/10/2026; post previsto para 23/10/2026 | [`04-vozes`](04-vozes/), que aponta para o `tts-ptbr/exemplos` | quantas palavras cada uma de 6 vozes abertas errou, pelo Whisper |
+| 5 | Skill: o que é um SKILL.md e o que não é (a publicar) | medido em 20/10/2026; post previsto para 27/10/2026 | [`06-skill`](06-skill/) (pasta 06) | o custo de uma Skill no contexto do Claude Code: a descrição contra o resto do SKILL.md e dos arquivos |
+| 6 | "Publique seu agente em 5 minutos": no claude.ai, isso não existe (a publicar) | conferido em 20/10/2026; post previsto para 30/10/2026 | [`05-agente`](05-agente/) (pasta 05) | se as frases citadas no post ainda estão nas páginas oficiais (Projetos, artefatos, Agent SDK, Managed Agents, preços da API) |
+| 7 | Subagente: o passo custa metade (a publicar) | medido em 21/10/2026 | [`07-subagente`](07-subagente/) | o custo por passo de um subagente contra o da sessão principal, pelo claude-context-cost |
 
 ## Como contribuir
 

@@ -1,0 +1,12 @@
+# ia-testada: quase tudo roda só com a biblioteca padrão do Python 3.11+.
+# Os testes (python -m unittest -v) não precisam de nada daqui.
+# Dependências opcionais, só para quem for refazer estas medidas:
+#
+# 07-subagente/medir_subagentes.py: soma as transcrições
+# claude-context-cost>=1.6.3
+#
+# 05-agente/capturar.py: controla o Chrome sem tela (precisa do Google Chrome)
+# websockets
+#
+# Para instalar uma delas, tire o "#" da linha e rode:
+#   python -m pip install -r requirements.txt

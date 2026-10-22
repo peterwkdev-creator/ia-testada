@@ -1,0 +1,17 @@
+transcript: <sessão>.jsonl  (3.1 MB)
+respostas: 127
+  cache_read_input_tokens            13,257,338   98.0%
+  cache_creation_input_tokens           210,640    1.6%
+  output_tokens                          61,085    0.5%
+  input_tokens                              260    0.0%
+contexto por resposta: mediana 101,801 · p90 153,172 · máx 165,865
+reinícios de cache (> 100 mil gravados): 0, somando 0
+resultado de ferramenta (caracteres):
+  Read                                             1x    293,580
+  mcp__claude-in-chrome__browser_batch            42x    281,046
+  Bash                                            43x     61,250
+  mcp__ccd_session_mgmt__list_sessions             1x      6,883
+  mcp__claude-in-chrome__get_page_text             2x      6,183
+  mcp__claude-in-chrome__navigate                  4x      3,470
+  mcp__claude-in-chrome__find                      3x      3,406
+  mcp__ccd_turn__wrap_up                           9x      2,290

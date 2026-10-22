@@ -1,7 +1,9 @@
 # 06-skill: o que uma Skill custa no contexto
 
 Medida do post "Skill: o que é um SKILL.md e o que não é" da @peterwk.dev
-(a publicar; previsto para 27/10/2026).
+(a publicar; previsto para 27/10/2026). A pasta é a 06; na ordem de
+publicação, é o post 5 (os posts 5 e 6 trocaram de data em 20/10/2026, e as
+pastas não mudam de nome: a `05-agente` é o post 6).
 
 **Medido em 20/10/2026, no Claude Code v2.1.299**, no Windows.
 
@@ -18,26 +20,50 @@ só quando lidos. O `medir_skills.py` põe número nisso:
 2. a listagem que entrou de fato no início da sessão: o anexo
    `skill_listing` da transcrição (quantas skills e quantos caracteres).
 
-A saída vai para o [`medidas.tsv`](medidas.tsv) desta pasta, só com o nome
-de cada skill e as contagens, nunca o caminho nem o conteúdo.
+## Pré-requisitos
 
-## Como refazer
+- Python 3.11 ou mais novo, só a biblioteca padrão.
+- O Claude Code instalado, com pelo menos uma sessão feita (para ter
+  transcrição) e skills em `~/.claude/skills`.
 
-```bash
-python -I medir_skills.py <transcrição .jsonl de uma sessão do Claude Code>
-```
+## Passo a passo
 
-A transcrição fica em `%USERPROFILE%\.claude\projects\<pasta do projeto>\<id da sessão>.jsonl`
-no Windows (no macOS e no Linux, `~/.claude/projects/<pasta do projeto>/<id da sessão>.jsonl`),
-uma pasta por projeto. A da sessão mais recente, no PowerShell:
+1. Ache a transcrição. Ela fica em
+   `%USERPROFILE%\.claude\projects\<pasta do projeto>\<id da sessão>.jsonl`
+   no Windows (no macOS e no Linux,
+   `~/.claude/projects/<pasta do projeto>/<id da sessão>.jsonl`), uma pasta
+   por projeto. A da sessão mais recente, no PowerShell:
 
-```powershell
-Get-ChildItem "$env:USERPROFILE\.claude\projects" -Recurse -Filter *.jsonl |
-  Sort-Object LastWriteTime | Select-Object -Last 1 -ExpandProperty FullName
-```
+   ```powershell
+   Get-ChildItem "$env:USERPROFILE\.claude\projects" -Recurse -Filter *.jsonl |
+     Sort-Object LastWriteTime | Select-Object -Last 1 -ExpandProperty FullName
+   ```
+
+2. Entre na pasta (`cd 06-skill`) e rode:
+
+   ```bash
+   python -I medir_skills.py <transcrição .jsonl de uma sessão do Claude Code>
+   ```
 
 A transcrição é sua e tem dado da conta: não a publique nem a cole em issue.
 O `.gitignore` deste repositório barra `*.jsonl`.
+
+## Saída esperada
+
+Uma tabela na tela, a mesma que vai para o [`medidas.tsv`](medidas.tsv)
+desta pasta: uma linha por skill (`skill`, `descricao_chars`,
+`skill_md_chars`, `outros_bytes`, `na_listagem`) e a listagem que entrou
+na sessão (quantas skills e quantos caracteres). Só o nome de
+cada skill e as contagens, nunca o caminho nem o conteúdo.
+
+## Como ler
+
+- `descricao_chars` é o que a skill custa em toda conversa, se
+  `na_listagem` for `sim`.
+- `skill_md_chars` só entra quando a skill é usada; `outros_bytes`, só
+  quando o Claude lê aqueles arquivos.
+- A listagem da sessão mostra o que entrou de fato: soma às skills da pasta
+  as que vêm com o Claude Code e com os plugins.
 
 ## Números (20/10/2026)
 
@@ -68,7 +94,7 @@ O `.gitignore` deste repositório barra `*.jsonl`.
    (três níveis: metadados sempre, corpo quando acionada, arquivos só quando
    lidos; `description` até 1.024 caracteres).
 
-## Limites
+## Limites e correções
 
 - Um computador, uma sessão, uma data: a listagem muda com as skills e os
   plugins instalados e com a versão do Claude Code.
@@ -76,9 +102,7 @@ O `.gitignore` deste repositório barra `*.jsonl`.
   ~100 tokens por skill; não medimos tokens.
 - A descrição é contada como está no YAML, numa linha; descrição em bloco
   (`|` ou `>`) não é tratada.
-
-## Correção de 20/10/2026
-
-A primeira versão do medidor contava as aspas do YAML como parte da
-descrição: a do `pptx` dava 962 caracteres; sem as aspas, são 960 (a do
-`xlsx`, de 952 para 950). O teste `tests/test_06_skill.py` fixa a regra.
+- **Correção de 20/10/2026.** A primeira versão do medidor contava as aspas
+  do YAML como parte da descrição: a do `pptx` dava 962 caracteres; sem as
+  aspas, são 960 (a do `xlsx`, de 952 para 950). O teste
+  `tests/test_06_skill.py` fixa a regra.
