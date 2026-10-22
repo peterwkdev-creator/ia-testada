@@ -30,7 +30,7 @@ No Windows, onde estiver `python`, `py` também serve.
 
 ## Usar
 
-Três pastas têm medidor: a 02, a 06 e a 07. A 05 tem um conferidor de
+Quatro pastas têm medidor: a 02, a 06, a 07 e a 19. A 05 tem um conferidor de
 fontes e o script das capturas de tela; a 04 aponta para o código no
 tts-ptbr; a 30 guarda um prompt testado, o HTML que ele deu e o gravador
 que o põe em MP4. Cada README traz o passo a passo para refazer. O medidor do post
@@ -74,6 +74,7 @@ antes do 7.
 | 5 | Skill: o que é um SKILL.md e o que não é (a publicar) | medido em 20/10/2026; post previsto para 27/10/2026 | [`06-skill`](06-skill/) (pasta 06) | o custo de uma Skill no contexto do Claude Code: a descrição contra o resto do SKILL.md e dos arquivos |
 | 6 | "Publique seu agente em 5 minutos": no claude.ai, isso não existe (a publicar) | conferido em 20/10/2026; post previsto para 30/10/2026 | [`05-agente`](05-agente/) (pasta 05) | se as frases citadas no post ainda estão nas páginas oficiais (Projetos, artefatos, Agent SDK, Managed Agents, preços da API) |
 | 7 | Subagente: o passo custa metade (a publicar) | medido em 21/10/2026 | [`07-subagente`](07-subagente/) | o custo por passo de um subagente contra o da sessão principal, pelo claude-context-cost |
+| 19 | Hook, Skill, MCP e subagente: quem dispara? (a publicar) | medido em 22/10/2026; post previsto para 06/11/2026 | [`19-dicionario`](19-dicionario/) | os números do post nos nossos arquivos: 3 eventos do gancho, 244 caracteres de descrição contra 4.921 de corpo numa skill, 22 ferramentas do MCP do Chrome |
 | 30 | O prompt de motion que viralizou, testado (a publicar) | testado em 21/10/2026; post previsto para 28/10/2026 | [`30-motion`](30-motion/) | se o prompt sai de primeira no claude.ai, quais números a IA inventou na tela (18) e o passo do HTML ao MP4 |
 
 ## Como contribuir

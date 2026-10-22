@@ -13,6 +13,10 @@ refeita entra aqui com a data e a pasta.
   `tests/test_30_motion.py` confere o sha256 do HTML, a moldura, os 18
   valores e o prompt sem eles; os HTML entram como `binary` no
   `.gitattributes`, e o MP4 e os quadros ficam fora.
+- Pasta nova `19-dicionario` (post 19): o trecho do gancho (`gancho.json`,
+  3 eventos), a cópia da skill `programar-post` sem os ids da conta, os 22
+  nomes do MCP Claude in Chrome e o `medir.py`, que refaz 3, 244, 4.921 e 22
+  contra o `medidas.tsv`; `tests/test_19_dicionario.py`.
 - README: o 30 no índice, no "Instalar" e no "Usar"; `requirements.txt` com
   o `playwright`.
 

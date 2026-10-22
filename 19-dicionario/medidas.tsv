@@ -1,0 +1,12 @@
+medida	valor
+gancho_eventos	3
+skill_descricao_caracteres	244
+skill_corpo_caracteres	4921
+mcp_chrome_ferramentas	22
+subagente_chamadas	7
+subagente_tokens	37900
+subagente_ms	30739
+razao_passo_subagente_sessao	0.50
+
+# medido em 22/10/2026; os 4 primeiros o medir.py refaz dos arquivos desta pasta;
+# o subagente vem da notificação da tarefa (a que leu a doc do post); a razão, do 07-subagente
