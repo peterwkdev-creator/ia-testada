@@ -16,8 +16,9 @@ macOS e no Linux.
 ## Instalar
 
 Python 3.11 ou mais novo. Tudo usa só a biblioteca padrão, menos o 07
-(`claude-context-cost`) e o `capturar.py` do 05 (`websockets` e o Google
-Chrome); essas dependências opcionais estão no
+(`claude-context-cost`), o `capturar.py` do 05 (`websockets` e o Google
+Chrome) e o `gravar.py` do 30 (`playwright`, o Google Chrome e o ffmpeg);
+essas dependências opcionais estão no
 [`requirements.txt`](requirements.txt). Os testes não precisam de nenhuma.
 
 ```bash
@@ -31,7 +32,8 @@ No Windows, onde estiver `python`, `py` também serve.
 
 Três pastas têm medidor: a 02, a 06 e a 07. A 05 tem um conferidor de
 fontes e o script das capturas de tela; a 04 aponta para o código no
-tts-ptbr. Cada README traz o passo a passo para refazer. O medidor do post
+tts-ptbr; a 30 guarda um prompt testado, o HTML que ele deu e o gravador
+que o põe em MP4. Cada README traz o passo a passo para refazer. O medidor do post
 da Skill, por exemplo:
 
 ```bash
@@ -59,7 +61,9 @@ diferente, e isso é informação.
 existe, tem o mesmo número, com uma exceção: os posts 5 e 6 trocaram de
 data em 20/10/2026, e as pastas não mudaram de nome (os links das
 legendas apontam para elas). Por isso a pasta `05-agente` é o post 6, e a `06-skill`, o
-post 5. Os posts 1 e 3 não têm pasta.
+post 5. Os posts 1 e 3 não têm pasta. Do 7 em diante, o número é
+o do plano de posts, e a data de publicação pode furar a fila: o 30 sai
+antes do 7.
 
 | Post nº | Post | Data | Onde está o código | O que mediu |
 |---|---|---|---|---|
@@ -70,6 +74,7 @@ post 5. Os posts 1 e 3 não têm pasta.
 | 5 | Skill: o que é um SKILL.md e o que não é (a publicar) | medido em 20/10/2026; post previsto para 27/10/2026 | [`06-skill`](06-skill/) (pasta 06) | o custo de uma Skill no contexto do Claude Code: a descrição contra o resto do SKILL.md e dos arquivos |
 | 6 | "Publique seu agente em 5 minutos": no claude.ai, isso não existe (a publicar) | conferido em 20/10/2026; post previsto para 30/10/2026 | [`05-agente`](05-agente/) (pasta 05) | se as frases citadas no post ainda estão nas páginas oficiais (Projetos, artefatos, Agent SDK, Managed Agents, preços da API) |
 | 7 | Subagente: o passo custa metade (a publicar) | medido em 21/10/2026 | [`07-subagente`](07-subagente/) | o custo por passo de um subagente contra o da sessão principal, pelo claude-context-cost |
+| 30 | O prompt de motion que viralizou, testado (a publicar) | testado em 21/10/2026; post previsto para 28/10/2026 | [`30-motion`](30-motion/) | se o prompt sai de primeira no claude.ai, quais números a IA inventou na tela (18) e o passo do HTML ao MP4 |
 
 ## Como contribuir
 

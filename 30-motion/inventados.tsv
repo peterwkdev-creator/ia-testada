@@ -1,0 +1,19 @@
+valor	o que a tela diz	linhas do widget.html
+2 h	idade do "post viral"	46
+50	casos de teste e rodadas	83, 84, 171
+6,2	nota de raciocínio	53
+7,4	nota de código	54
+1,3x	velocidade; depois, o "resultado real"	55, 137
+out 2026	mês do painel	65
+71,3%	precisão média (contagem animada)	220
+relatório oficial	fonte do 71,3%	68
+14 out 2026	data do 71,3%	68
+1,84 s	latência média	86, 171, 223
+teste próprio	fonte do 1,84 s	71
+15 out 2026	data do 1,84 s, do erro e do print	71, 99, 141
+2,31 s	p95	87
+3/50	erros	88, 171
+logs/2026-10-15.json	onde o resultado foi salvo	90
+Teste 17	o teste que falhou	99
+14:22	hora do erro	99
+print_1017.png	o print da prova	141

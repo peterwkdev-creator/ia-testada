@@ -8,5 +8,9 @@
 # 05-agente/capturar.py: controla o Chrome sem tela (precisa do Google Chrome)
 # websockets
 #
+# 30-motion/gravar.py: grava o HTML quadro a quadro (usa o Google Chrome
+# instalado; pede também o ffmpeg no PATH)
+# playwright
+#
 # Para instalar uma delas, tire o "#" da linha e rode:
 #   python -m pip install -r requirements.txt

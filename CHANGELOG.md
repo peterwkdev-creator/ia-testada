@@ -3,6 +3,19 @@
 Cada versão tem uma tag `vX.Y.Z` no commit que a publicou. Medida nova ou
 refeita entra aqui com a data e a pasta.
 
+## 0.5.0 (a publicar)
+
+- Pasta nova `30-motion` (post 30): o prompt testado em 21/10/2026 no
+  claude.ai (`prompt.txt`), o HTML como saiu do chat (`widget.html`), a
+  moldura de gravação (`index.html`), o gravador quadro a quadro
+  (`gravar.py`, Playwright e ffmpeg) e os 18 números que a IA pôs na tela
+  sem dado nenhum (`inventados.tsv`, com a linha de cada um).
+  `tests/test_30_motion.py` confere o sha256 do HTML, a moldura, os 18
+  valores e o prompt sem eles; os HTML entram como `binary` no
+  `.gitattributes`, e o MP4 e os quadros ficam fora.
+- README: o 30 no índice, no "Instalar" e no "Usar"; `requirements.txt` com
+  o `playwright`.
+
 ## 0.4.0 — 21/10/2026
 
 - `GUIA.md`: passo a passo para quem nunca rodou um medidor (clonar, Python

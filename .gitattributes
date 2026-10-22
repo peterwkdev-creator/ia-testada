@@ -3,3 +3,5 @@
 # Conteúdo conferido byte a byte: imagens, se alguma pasta trouxer prova na tela
 *.png binary
 *.jpg binary
+# 30-motion: o teste confere o sha256 do HTML como saiu do chat
+30-motion/*.html binary

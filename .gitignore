@@ -15,5 +15,9 @@ __pycache__/
 # Capturas de tela do 05: o capturar.py as refaz; só o capturas.tsv entra
 05-agente/capturas/*.png
 
+# Vídeo e quadros do 30: o gravar.py os refaz
+30-motion/*.mp4
+30-motion/*-quadros/
+
 # Transcrição de sessão: é sua e tem dado da conta; nunca entra
 *.jsonl
