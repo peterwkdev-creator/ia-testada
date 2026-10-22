@@ -106,8 +106,6 @@ Gravado em 22/10/2026: 56,4 s no relógio, do início ao fim da gravação.
 - O "10x" aparece riscado como alegação de um "post viral" e, adiante, como
   "afirma: 10x mais rápido" contra um "1,3x" de "resultado real", também
   sem medida. Não entra nos 18: a própria tela o trata como falso.
-- A própria resposta avisou que aquilo "só se sustenta se os números vierem
-  do mesmo teste real".
 - Incoerência interna: "3/50" erros não bate com 71,3% de precisão.
 
 ## Fontes
