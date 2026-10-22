@@ -3,7 +3,7 @@
 Cada versão tem uma tag `vX.Y.Z` no commit que a publicou. Medida nova ou
 refeita entra aqui com a data e a pasta.
 
-## 0.4.0 (a publicar)
+## 0.4.0 — 21/10/2026
 
 - `GUIA.md`: passo a passo para quem nunca rodou um medidor (clonar, Python
   3.11+, `python` ou `py` no Windows, os testes, um medidor, onde fica a
