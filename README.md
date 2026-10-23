@@ -15,7 +15,7 @@ macOS e no Linux.
 
 ## Instalar
 
-Python 3.11 ou mais novo. Tudo usa só a biblioteca padrão, menos o 07
+Python 3.11 ou mais novo. Tudo usa só a biblioteca padrão, menos o 07 e o 31
 (`claude-context-cost`), o `capturar.py` do 05 (`websockets` e o Google
 Chrome) e o `gravar.py` do 30 (`playwright`, o Google Chrome e o ffmpeg);
 essas dependências opcionais estão no
@@ -30,7 +30,7 @@ No Windows, onde estiver `python`, `py` também serve.
 
 ## Usar
 
-Quatro pastas têm medidor: a 02, a 06, a 07 e a 19. A 05 tem um conferidor de
+Cinco pastas têm medidor: a 02, a 06, a 07, a 19 e a 31. A 05 tem um conferidor de
 fontes e o script das capturas de tela; a 04 aponta para o código no
 tts-ptbr; a 30 guarda um prompt testado, o HTML que ele deu e o gravador
 que o põe em MP4. Cada README traz o passo a passo para refazer. O medidor do post
@@ -76,6 +76,7 @@ antes do 7.
 | 7 | Subagente: o passo custa metade (a publicar) | medido em 21/10/2026 | [`07-subagente`](07-subagente/) | o custo por passo de um subagente contra o da sessão principal, pelo claude-context-cost |
 | 19 | Hook, Skill, MCP e subagente: quem dispara? (a publicar) | medido em 22/10/2026; post previsto para 06/11/2026 | [`19-dicionario`](19-dicionario/) | os números do post nos nossos arquivos: 3 eventos do gancho, 244 caracteres de descrição contra 4.921 de corpo numa skill, 22 ferramentas do MCP do Chrome |
 | 30 | O prompt de motion que viralizou, testado (a publicar) | testado em 21/10/2026; post previsto para 28/10/2026 | [`30-motion`](30-motion/) | se o prompt sai de primeira no claude.ai, quais números a IA inventou na tela (18) e o passo do HTML ao MP4 |
+| 31 | Agent Teams: 3 agentes em time custaram 4× uma sessão só (a publicar) | medido em 23/10/2026; post previsto para 10/11/2026 | [`31-agent-teams`](31-agent-teams/) | a mesma tarefa feita por uma sessão só e por um líder com 3 teammates: 141.260 contra 564.642 tokens, pelo claude-context-cost |
 
 ## Como contribuir
 

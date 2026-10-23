@@ -1,0 +1,23 @@
+medida	valor
+versao_claude_context_cost	1.6.4
+solo_sessoes	1
+solo_respostas	4
+solo_tokens	141260
+time_sessoes_lider	1
+time_lider_respostas	6
+time_lider_tokens	218228
+time_teammates	3
+time_teammates_respostas	11
+time_teammates_tokens	346414
+teammate_cpf_respostas	4
+teammate_cpf_tokens	127088
+teammate_palavras_respostas	4
+teammate_palavras_tokens	125961
+teammate_temperatura_respostas	3
+teammate_temperatura_tokens	93365
+time_respostas	17
+time_tokens	564642
+contextos_no_time	4
+razao_time_solo	4.0
+
+# medido em 23/10/2026; tokens = contexto relido, somado nas respostas

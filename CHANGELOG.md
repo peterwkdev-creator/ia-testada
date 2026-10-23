@@ -3,8 +3,17 @@
 Cada versão tem uma tag `vX.Y.Z` no commit que a publicou. Medida nova ou
 refeita entra aqui com a data e a pasta.
 
-## 0.5.0 (a publicar)
+## 0.5.0 — 23/10/2026
 
+- Pasta nova `31-agent-teams` (post 31): a tarefa (`TAREFA.md`), a
+  configuração que liga o Agent Teams só no projeto do time
+  (`settings-time.json`) e o `medir_time.py`, que chama o
+  claude-context-cost nas duas pastas (cada uma copiada antes para um
+  caminho curto, contra o `WinError 3` do 1.6.4) e grava o
+  `medidas.tsv` de 23/10/2026: solo 141.260 tokens, time 564.642, 4,0×,
+  e cada teammate pelo nome (cpf 127.088, temperatura 93.365, palavras
+  125.961).
+  `tests/test_31_agent_teams.py`.
 - Pasta nova `30-motion` (post 30): o prompt testado em 21/10/2026 no
   claude.ai (`prompt.txt`), o HTML como saiu do chat (`widget.html`), a
   moldura de gravação (`index.html`), o gravador quadro a quadro
