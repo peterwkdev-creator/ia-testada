@@ -28,11 +28,14 @@ AQUI = pathlib.Path(__file__).resolve().parent
 
 
 def longo(caminho):
-    """O caminho com o prefixo que libera os 260 caracteres no Windows."""
-    caminho = os.path.abspath(caminho)
-    if os.name == "nt" and not caminho.startswith("\\\\?\\"):
-        return "\\\\?\\" + caminho
-    return caminho
+    """O caminho com o prefixo que libera os 260 caracteres no Windows.
+
+    Fora do Windows, ou se o prefixo já está, o caminho volta como veio.
+    """
+    caminho = os.fspath(caminho)
+    if os.name != "nt" or caminho.startswith("\\\\?\\"):
+        return caminho
+    return "\\\\?\\" + os.path.abspath(caminho)
 
 
 def rodar(pasta):
