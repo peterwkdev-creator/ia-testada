@@ -3,7 +3,7 @@
 Cada versão tem uma tag `vX.Y.Z` no commit que a publicou. Medida nova ou
 refeita entra aqui com a data e a pasta.
 
-## A publicar
+## 0.6.0 — 23/10/2026
 
 - Pasta nova `23-pr` (post 23): o `medir_pr.py`, que roda 5 vezes o
   `claude -p` pedindo a descrição do PR v0.4.0...v0.5.0 deste repositório
