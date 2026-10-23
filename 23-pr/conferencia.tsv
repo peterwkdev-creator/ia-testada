@@ -1,0 +1,23 @@
+rodada	arquivo	categoria	motivo
+1	19-dicionario/medidas.tsv	nome	"medidas.tsv" na seção do 19-dicionario
+1	31-agent-teams/medidas.tsv	nome	"medidas.tsv" na seção do 31-agent-teams
+1	19-dicionario/README.md	pasta	o único README.md é o da raiz; "cada README de pasta" não nomeia nenhum
+1	30-motion/README.md	pasta	o único README.md é o da raiz; "cada README de pasta" não nomeia nenhum
+1	31-agent-teams/README.md	pasta	o único README.md é o da raiz; "cada README de pasta" não nomeia nenhum
+2	19-dicionario/medidas.tsv	nome	"medidas.tsv" no item do 19-dicionario
+2	31-agent-teams/medidas.tsv	nome	"medidas.tsv" no item do 31-agent-teams
+2	README.md	nome	"README da raiz", sem o .md
+3	19-dicionario/medidas.tsv	nome	"medidas.tsv" na seção do 19-dicionario
+3	31-agent-teams/medidas.tsv	nome	"medidas.tsv" na seção do 31-agent-teams
+3	19-dicionario/README.md	pasta	o único README.md é o da raiz
+3	30-motion/README.md	nome	"O README não cita a resposta do chat", na seção do 30-motion
+3	31-agent-teams/README.md	pasta	o único README.md é o da raiz
+4	19-dicionario/medidas.tsv	nome	"medidas.tsv" no item do 19-dicionario
+4	31-agent-teams/medidas.tsv	pasta	o único "medidas.tsv" é o do 19-dicionario
+4	README.md	nome	"README: linhas 19, 30 e 31 no índice", sem o .md
+5	19-dicionario/medidas.tsv	nome	"medidas.tsv" no item do 19-dicionario
+5	31-agent-teams/medidas.tsv	pasta	o único "medidas.tsv" é o do 19-dicionario
+5	README.md	nome	"atualiza o índice do README", sem o .md
+5	CHANGELOG.md	nome	"traz o CHANGELOG da 0.5.0", sem o .md
+1	19-dicionario/skill/SKILL.md	nome	"skill/SKILL.md" na seção do 19-dicionario; SKILL.md é único no diff
+3	19-dicionario/skill/SKILL.md	nome	"skill/SKILL.md" na seção do 19-dicionario; SKILL.md é único no diff

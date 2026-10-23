@@ -1,0 +1,9 @@
+{
+ "modelo": "claude-opus-5-5",
+ "turnos": 4,
+ "duracao_s": 32.2,
+ "custo_usd": 0.4211,
+ "tokens_entrada": 168738,
+ "tokens_saida": 2201,
+ "quando": "23/10/2026"
+}

@@ -1,0 +1,8 @@
+rodada	modelo	turnos	duracao_s	custo_usd	tokens_entrada	tokens_saida	caminho	nome	ambiguo	pasta	fora	corrigidos_a_mao
+1	claude-opus-5-5	4	32.2	0.4211	168738	2201	8	14	0	3	0	6
+2	claude-opus-5-5	9	52.0	0.2051	303064	2769	7	14	0	4	0	3
+3	claude-opus-5-5	7	40.4	0.1848	252670	2687	10	13	0	2	0	6
+4	claude-opus-5-5	7	41.8	0.1868	254567	2686	7	13	0	5	0	3
+5	claude-opus-5-5	6	35.2	0.4485	193216	2396	7	11	0	7	0	4
+
+# 25 arquivos no diff v0.4.0...v0.5.0; categorias depois da conferência à mão (conferencia.tsv); ambiguo que sobrar = conferir

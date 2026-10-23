@@ -3,6 +3,19 @@
 Cada versão tem uma tag `vX.Y.Z` no commit que a publicou. Medida nova ou
 refeita entra aqui com a data e a pasta.
 
+## A publicar
+
+- Pasta nova `23-pr` (post 23): o `medir_pr.py`, que roda 5 vezes o
+  `claude -p` pedindo a descrição do PR v0.4.0...v0.5.0 deste repositório
+  (25 arquivos) e conta o que cada uma citou; as 5 descrições
+  (`rodadas/`), a conferência à mão (`conferencia.tsv`, revisada por
+  outro modelo), `arquivos.tsv` e `medidas.tsv` de 23/10/2026: 0 arquivo
+  de fora, de 2 a 7 só pela pasta. `tests/test_23_pr.py`.
+- Pasta nova `25-rebase` (post 25): o `medir_rebase.py`, sem IA, com
+  remoto bare e dois clones; `medidas.tsv` de 23/10/2026 (git 2.56.0).
+  `tests/test_25_rebase.py`.
+- README: o 23 e o 25 no índice.
+
 ## 0.5.0 — 23/10/2026
 
 - Pasta nova `31-agent-teams` (post 31): a tarefa (`TAREFA.md`), a

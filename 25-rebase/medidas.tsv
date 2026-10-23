@@ -1,0 +1,7 @@
+cenario	opcoes	fetch_antes	push	commit_do_colega_no_remoto
+force	--force	não	aceito	não
+force_with_lease	--force-with-lease	não	barrado	sim
+fetch_e_force_with_lease	--force-with-lease	sim	aceito	não
+fetch_e_force_if_includes	--force-with-lease --force-if-includes	sim	barrado	sim
+
+# medido em 23/10/2026 com git version 2.56.0.windows.1
