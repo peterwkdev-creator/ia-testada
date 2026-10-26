@@ -3,6 +3,15 @@
 Cada versão tem uma tag `vX.Y.Z` no commit que a publicou. Medida nova ou
 refeita entra aqui com a data e a pasta.
 
+## 0.7.0 — 26/10/2026
+
+- Pasta nova `12-licenca` (post 12): o `conferir_licencas.py`, só com a
+  biblioteca padrão e sem token, lê a licença do código (API do GitHub) e a
+  dos pesos (API do Hugging Face) de 6 modelos; `medidas.tsv` coletado em
+  26/10/2026 18:12Z: F5-TTS é MIT no código e `cc-by-nc-4.0` nos pesos; o
+  Piper é GPL-3.0 no código e `mit` nas vozes. `tests/test_12_licenca.py`.
+- README: o 12 no índice.
+
 ## 0.6.0 — 23/10/2026
 
 - Pasta nova `23-pr` (post 23): o `medir_pr.py`, que roda 5 vezes o

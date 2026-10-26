@@ -1,0 +1,7 @@
+modelo	repo_github	licenca_codigo	id_hf	licenca_pesos	nome_licenca_pesos	coletado_em
+F5-TTS	SWivid/F5-TTS	MIT	SWivid/F5-TTS	cc-by-nc-4.0		2026-10-26T18:12Z
+XTTS-v2	idiap/coqui-ai-TTS	MPL-2.0	coqui/XTTS-v2	other	coqui-public-model-license	2026-10-26T18:12Z
+LTX-2	Lightricks/LTX-2	NOASSERTION	Lightricks/LTX-2	other	ltx-2-community-license-agreement	2026-10-26T18:12Z
+Kokoro (kokoro-onnx)	thewh1teagle/kokoro-onnx	MIT	hexgrad/Kokoro-82M	apache-2.0		2026-10-26T18:12Z
+Piper (vozes)	OHF-Voice/piper1-gpl	GPL-3.0	rhasspy/piper-voices	mit		2026-10-26T18:12Z
+Whisper (small)	SYSTRAN/faster-whisper	MIT	Systran/faster-whisper-small	mit		2026-10-26T18:12Z
