@@ -1,0 +1,14 @@
+{
+ "condicao": "B",
+ "n": 1,
+ "modelo": "claude-opus-5-5",
+ "turnos": 10,
+ "duracao_s": 40.8,
+ "custo_usd": 0.4962,
+ "tokens_entrada": 299344,
+ "tokens_saida": 4314,
+ "teste_gerado": true,
+ "carrinho_alterado": false,
+ "outros_arquivos": [],
+ "quando": "29/10/2026"
+}
