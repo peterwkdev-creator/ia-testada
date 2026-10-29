@@ -3,6 +3,16 @@
 Cada versão tem uma tag `vX.Y.Z` no commit que a publicou. Medida nova ou
 refeita entra aqui com a data e a pasta.
 
+## 0.8.0 — 29/10/2026
+
+- Pasta nova `16-teste-verde` (post 16): o `medir_teste_verde.py` pede ao
+  Claude Code os testes de um carrinho de compras em Python, 5 rodadas em
+  cada uma de 3 condições, e confere as 15 suítes contra 10 defeitos
+  plantados de uma linha; medido em 29/10/2026 com o Claude Code 2.1.309:
+  as 15 suítes pegaram os 10 defeitos, mas 67 das 150 detecções dependeram
+  de um teste só. `tests/test_16_teste_verde.py`.
+- README: o 16 no índice.
+
 ## 0.7.0 — 26/10/2026
 
 - Pasta nova `12-licenca` (post 12): o `conferir_licencas.py`, só com a
