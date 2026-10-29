@@ -40,10 +40,10 @@ confere, pela árvore sintática sem as docstrings (`sem_docstrings`), que o
 código é idêntico ao do certo, e que os defeitos de
 [`defeitos-c/`](defeitos-c/) são os mesmos 10 de `defeitos/`.
 
-com Read, Write, Edit, Glob, Grep e Bash liberado só para `python`, sem
-guardar a sessão, sem os ganchos do usuário e sem o `CLAUDE.md` global
-(`claudeMdExcludes`). Depois, o `carrinho.py` da pasta temporária se confere
-pelo sha256 (nas 10 rodadas saiu igual ao original; a contagem usa sempre o
+As três condições rodam com Read, Write, Edit, Glob, Grep e Bash liberado
+só para `python`, sem guardar a sessão, sem os ganchos do usuário e sem o
+`CLAUDE.md` global (`claudeMdExcludes`). Depois, o `carrinho.py` da pasta
+temporária se confere pelo sha256 (nas 15 rodadas saiu igual ao original; a contagem usa sempre o
 original).
 
 Os defeitos ficam em [`defeitos/`](defeitos/), cada um o `carrinho.py` com
@@ -80,7 +80,8 @@ python -I medir_teste_verde.py rodar 5
 python -I medir_teste_verde.py contar
 ```
 
-O `rodar` grava `rodadas/A-N/` e `rodadas/B-N/`: o `test_carrinho.py`
+O `rodar` grava `rodadas/A-N/`, `rodadas/B-N/` e `rodadas/C-N/` (para uma
+condição só, `rodar 5 C`): o `test_carrinho.py`
 gerado e o `numeros.json` (modelo, turnos, duração, custo e tokens; nenhum
 texto da sessão). Rodada já gravada não se refaz. O `contar` roda cada
 suíte no certo e nos 10 defeitos (pegou = algum teste falha ou dá erro;
@@ -125,8 +126,12 @@ exemplos das docstrings (C) também não mudou o placar.
 Quantos testes caíram com cada defeito (mínimo–máximo nas 15 suítes):
 `d01` 1–4, `d02` 2–4, `d03` 1–2, `d04` 2–3, `d05` 1–2, `d06` 1–2, `d07` 2–6,
 `d08` 1–1, `d09` 1–2, `d10` 1–3 (por condição, no rodapé do `medidas.tsv`).
-O `d08` caiu por um teste só nas 15; o `d05`, em 12 das 15 (5 na A, 4 na B,
-3 na C). Na A-1, o `d05` só cai em `test_arredonda_meio_centavo_para_cima`
+O `d08` caiu por um teste só nas 15; o `d09`, em 14; o `d03` e o `d05`, em
+12 das 15 (o `d05`: 5 na A, 4 na B, 3 na C); o `d06`, em 8; o `d01`, em 5; o
+`d10`, em 1. Somando, **67 das 150** detecções (15 suítes × 10 defeitos)
+dependeram de um teste só; por suíte, de 1 a 7 defeitos (na B-5, só o
+`d08`). Contado no [`defeitos.tsv`](defeitos.tsv), coluna
+`testes_que_falharam` igual a 1. Na A-1, o `d05` só cai em `test_arredonda_meio_centavo_para_cima`
 (1000 != 1001), e o `d08` só em `test_brinde_de_preco_zero`. Na C-3, sem os
 exemplos no texto, os únicos são `test_arredondamento_meio_centavo_sobe` e
 `test_preco_zero`.
